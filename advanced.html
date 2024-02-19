@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            padding: 20px
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .advLabel {
+            color: #d93025;
+            font-size: 20px;
+            margin: 25px 35px;
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 15px;
+        }
+
+        .findHeader {
+            min-width: 167px;
+            width: 16%;
+            font-size: 16px;
+            min-height: 42px;
+            font-weight: 500;
+            color: #333;
+            vertical-align: middle;
+        }
+
+        .label {
+            float: left;
+            display: inline-block;
+            min-width: 167px;
+            width: 16%;
+
+            color: #222;
+            font-size: 13px;
+            line-height: 16px;
+            vertical-align: middle;
+        }
+
+        .advInput {
+            border-radius: 1px;
+            border: 1px solid #d9d9d9;
+            border-top: 1px solid #c0c0c0;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+            min-width: 167px;
+            width: 50%;
+            border-radius: 1px;
+            border: 1px solid #d9d9d9;
+            border-top: 1px solid #c0c0c0;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+        }
+
+        .advInput:focus {
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+            border: 1px solid #4d90fe;
+            outline: none;
+        }
+
+        .alignCenter {
+            align-items: center;
+        }
+
+        .mb-15 {
+            margin-bottom: 15px;
+        }
+
+        .advSearch {
+            box-shadow: none;
+            background-color: #4d90fe;
+            user-select: none;
+            line-height: 100%;
+            height: 30px;
+            min-width: 120px;
+            text-decoration: none;
+            border: 1px solid #3079ed;
+            color: #fff;
+            border-radius: 2px;
+            cursor: default;
+            font-size: 11px;
+            font-weight: bold;
+            text-align: center;
+            float: right;
+        }
+
+        .btnBox {
+            min-width: 167px;
+            min-height: 41px;
+            vertical-align: middle;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./googlelogo_clr_74x24px.svg">
+        <div style="
+        float: right;"><a href="./index.html">back to Google Search</a>
+    </header>
+    <div class="advLabel">
+        <label>Advanced Search</label>
+    </div>
+    <div class="findHeader">Find pages with...</div>
+    <form action="https://www.google.com/search">
+        <div class="flex alignCenter  mb-15"> <label class="label">all these words:</label><input class="advInput"
+                name="as_q">
+        </div>
+        <div class="flex alignCenter mb-15"> <label class="label">this exact word or phrase:</label><input
+                class="advInput" name="as_epq"></div>
+
+        <div class="flex alignCenter mb-15"> <label class="label">any of these words:</label><input class="advInput"
+                name="as_oq"></div>
+
+        <div class="flex alignCenter mb-15"> <label class="label">none of these words:</label><input class="advInput"
+                name="as_eq"></div>
+        <div class="btnBox">
+            <!-- <input type="hidden" value="tbs"> -->
+            <input type="submit" class="advSearch" value="Advanced Search">
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

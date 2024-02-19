@@ -121,22 +121,24 @@
 
 <body>
     <div role="navigation" class="header">
-        <div><a href="./imageSearch.html">Image Search</a>
-            <a style="margin-left: 10px;" href="./advanced.html">Advanced Search</a>
+        <div><a href="./index.html">back to Google Search</a>
+            <!-- <a>Advanced Search</a> -->
         </div>
     </div>
     <div class="flex alignCenter justifyCenter inputBox flexColumn">
         <img src="./googlelogo_color_272x92dp.png" width="272" class="googleLogo">
-        <form class="searchSection" action="https://google.com/search">
+        <form class="searchSection" action="https://www.google.com/search">
             <div class="container">
                 <input class="input" type="text" name="q">
+                <input class="input" type="hidden" name="tbm" value="isch">
+
             </div>
             <div class="pt-18">
                 <div class="textCenter">
                     <input type="submit" value="Google Search">
-                    <input type="submit" value="I'm Feeling Lucky">
+                    <!-- <input type="submit" value="I'm Feeling Lucky"> -->
 
-                </div>
+                </div class="textCenter">
 
             </div>
 
